@@ -1,3 +1,66 @@
-<h1>
-  {{title}}
-</h1>
+<div class="flex-container" fxLayoutGap="4px" fxLayout="column">
+<md-toolbar color="primary"> 
+  <span >Калькулятор Angular</span>
+</md-toolbar>
+ <md-card fxFlex>
+    <md-card-content>
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+          <span> Результаты вычислений</span>
+          <span>{{result}}</span>
+      </div>
+    </md-card-content>
+  </md-card>
+  <md-grid-list cols="4" class="list" rowHeight="150px">
+    <md-grid-tile>
+      <button md-button (click)="Sum(9)">9</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>8</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>7</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>+</button>
+    </md-grid-tile>
+
+    <md-grid-tile>
+      <button md-button>6</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>5</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>4</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>-</button>
+    </md-grid-tile>
+
+    <md-grid-tile>
+      <button md-button>3</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>2</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>1</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>*</button>
+    </md-grid-tile>
+
+    <md-grid-tile>
+      <button md-button>0</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>.</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>=</button>
+    </md-grid-tile>
+    <md-grid-tile>
+      <button md-button>/</button>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
